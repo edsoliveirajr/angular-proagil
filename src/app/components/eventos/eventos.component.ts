@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -6,10 +6,8 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './eventos.component.html',
   styleUrls: ['./eventos.component.css'],
 })
-export class EventosComponent implements OnInit {
-  eventos: any;
+export class EventosComponent {
+  eventos: any = [{ teste: '123' }, { teste: '456' }, { teste: '789' }];
 
   constructor(private http: HttpClient) {}
-
-  ngOnInit() {}
 }

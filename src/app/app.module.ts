@@ -4,9 +4,10 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { EventosComponent } from './components/eventos/eventos.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, EventosComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
