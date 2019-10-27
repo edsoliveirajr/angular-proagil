@@ -7,7 +7,11 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./eventos.component.css'],
 })
 export class EventosComponent {
-  eventos: any = [{ teste: '123' }, { teste: '456' }, { teste: '789' }];
+  eventos: any = [
+    { teste: '123' },
+    { teste: '456' },
+    { teste: '789' },
+  ];
 
   constructor(private http: HttpClient) {}
 }

@@ -8,7 +8,11 @@ import { EventosComponent } from './components/eventos/eventos.component';
 
 @NgModule({
   declarations: [AppComponent, EventosComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
